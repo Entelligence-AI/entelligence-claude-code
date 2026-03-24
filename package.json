@@ -1,0 +1,57 @@
+{
+  "name": "@anthropic-ai/entelligence-pr-reviewer",
+  "version": "1.0.0",
+  "description": "AI-powered PR review for Claude Code by Entelligence.AI — code quality, security, and best practices analysis",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "entelligence-pr-reviewer": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude-code",
+    "pr-review",
+    "code-review",
+    "entelligence",
+    "ai",
+    "pull-request",
+    "github",
+    "gitlab"
+  ],
+  "author": {
+    "name": "Entelligence.AI",
+    "url": "https://entelligence.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Entelligence-AI/entelligence-claude-code.git"
+  },
+  "homepage": "https://github.com/Entelligence-AI/entelligence-claude-code#readme",
+  "bugs": {
+    "url": "https://github.com/Entelligence-AI/entelligence-claude-code/issues"
+  },
+  "license": "MIT"
+}
