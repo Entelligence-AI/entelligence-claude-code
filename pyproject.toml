@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "entelligence-pr-reviewer"
+name = "entelligence-code-reviewer"
 version = "1.0.0"
 description = "AI-powered PR review for Claude Code by Entelligence.AI"
 readme = "README.md"
@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [project.scripts]
-entelligence-pr-reviewer = "entelligence_pr_reviewer.server:main"
+entelligence-code-reviewer = "entelligence_pr_reviewer.server:main"
 
 [project.urls]
 Homepage = "https://github.com/Entelligence-AI/entelligence-claude-code"
