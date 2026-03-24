@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "entelligence-pr-reviewer"
+version = "1.0.0"
+description = "AI-powered PR review for Claude Code by Entelligence.AI"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Entelligence.AI", email = "support@entelligence.ai" },
+]
+keywords = ["mcp", "claude-code", "pr-review", "code-review", "entelligence", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+entelligence-pr-reviewer = "entelligence_pr_reviewer.server:main"
+
+[project.urls]
+Homepage = "https://github.com/Entelligence-AI/entelligence-claude-code"
+Repository = "https://github.com/Entelligence-AI/entelligence-claude-code"
+Issues = "https://github.com/Entelligence-AI/entelligence-claude-code/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/entelligence_pr_reviewer"]

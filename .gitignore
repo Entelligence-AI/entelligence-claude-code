@@ -1,4 +1,18 @@
+# Node
 node_modules/
 dist/
 *.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# OS
 .DS_Store
+
+# Secrets
+.npmrc

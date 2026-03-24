@@ -4,14 +4,17 @@ AI-powered PR review inside [Claude Code](https://claude.ai/code). Analyzes code
 
 ## Quick Start
 
-Add to your Claude Code MCP config (`~/.claude/.mcp.json`):
+Install and add to your Claude Code MCP config (`~/.claude/.mcp.json`):
+
+```bash
+pip install entelligence-pr-reviewer
+```
 
 ```json
 {
   "mcpServers": {
-    "@entelligence-ai/pr-reviewer": {
-      "command": "npx",
-      "args": ["-y", "@entelligence-ai/pr-reviewer"]
+    "entelligence-pr-reviewer": {
+      "command": "entelligence-pr-reviewer"
     }
   }
 }
@@ -27,16 +30,19 @@ Restart Claude Code. On first use, you'll be prompted to enter your API key — 
 
 ## Setup
 
-### 1. Add the MCP Server
+### 1. Install & Add the MCP Server
+
+```bash
+pip install entelligence-pr-reviewer
+```
 
 Add to `~/.claude/.mcp.json` (global) or `.mcp.json` (per-project):
 
 ```json
 {
   "mcpServers": {
-    "@entelligence-ai/pr-reviewer": {
-      "command": "npx",
-      "args": ["-y", "@entelligence-ai/pr-reviewer"]
+    "entelligence-pr-reviewer": {
+      "command": "entelligence-pr-reviewer"
     }
   }
 }
@@ -56,9 +62,8 @@ That's it. No config file editing required.
 ```json
 {
   "mcpServers": {
-    "@entelligence-ai/pr-reviewer": {
-      "command": "npx",
-      "args": ["-y", "@entelligence-ai/pr-reviewer"],
+    "entelligence-pr-reviewer": {
+      "command": "entelligence-pr-reviewer",
       "env": {
         "ENTELLIGENCE_API_KEY": "ent-your-key-here"
       }
