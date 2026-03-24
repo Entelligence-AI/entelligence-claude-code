@@ -423,14 +423,10 @@ If actionable issues found, ask: "Want me to apply the suggested fixes?"
 
 
 @mcp.tool()
-def install_skill(project_dir: str) -> str:
-    """Install the /entelligence-review slash command skill into a project. Run this once per project to enable the /entelligence-review command.
-
-    Args:
-        project_dir: Absolute path to the project root directory (e.g. the git repo root)
-    """
+def install_skill() -> str:
+    """Install the /entelligence-review slash command globally so it's available in all projects. Run this once after installing the package."""
     try:
-        skill_dir = Path(project_dir) / ".claude" / "skills" / "entelligence-review"
+        skill_dir = Path.home() / ".claude" / "skills" / "entelligence-review"
         skill_file = skill_dir / "SKILL.md"
 
         if skill_file.exists():
@@ -439,7 +435,7 @@ def install_skill(project_dir: str) -> str:
         skill_dir.mkdir(parents=True, exist_ok=True)
         skill_file.write_text(SKILL_CONTENT.strip() + "\n")
 
-        return f"Skill installed at `{skill_file}`.\n\nRestart Claude Code, then use `/entelligence-review <PR#>` to review PRs."
+        return f"Skill installed globally at `{skill_file}`.\n\n`/entelligence-review` will be available in all projects. Restart Claude Code to activate."
     except Exception as e:
         return f"Error installing skill: {e}"
 
