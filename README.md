@@ -9,9 +9,9 @@ Add to your Claude Code MCP config (`~/.claude/.mcp.json`):
 ```json
 {
   "mcpServers": {
-    "entelligence-pr-reviewer": {
+    "@entelligence-ai/pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "entelligence-pr-reviewer"]
+      "args": ["-y", "@entelligence-ai/pr-reviewer"]
     }
   }
 }
@@ -34,9 +34,9 @@ Add to `~/.claude/.mcp.json` (global) or `.mcp.json` (per-project):
 ```json
 {
   "mcpServers": {
-    "entelligence-pr-reviewer": {
+    "@entelligence-ai/pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "entelligence-pr-reviewer"]
+      "args": ["-y", "@entelligence-ai/pr-reviewer"]
     }
   }
 }
@@ -56,9 +56,9 @@ That's it. No config file editing required.
 ```json
 {
   "mcpServers": {
-    "entelligence-pr-reviewer": {
+    "@entelligence-ai/pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "entelligence-pr-reviewer"],
+      "args": ["-y", "@entelligence-ai/pr-reviewer"],
       "env": {
         "ENTELLIGENCE_API_KEY": "ent-your-key-here"
       }

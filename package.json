@@ -1,5 +1,5 @@
 {
-  "name": "entelligence-pr-reviewer",
+  "name": "@entelligence-ai/pr-reviewer",
   "version": "1.0.0",
   "description": "AI-powered PR review for Claude Code by Entelligence.AI — code quality, security, and best practices analysis",
   "main": "dist/index.js",
