@@ -11,7 +11,7 @@ Add to your Claude Code MCP config (`~/.claude/.mcp.json`):
   "mcpServers": {
     "entelligence-pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "@anthropic-ai/entelligence-pr-reviewer"]
+      "args": ["-y", "entelligence-pr-reviewer"]
     }
   }
 }
@@ -36,7 +36,7 @@ Add to `~/.claude/.mcp.json` (global) or `.mcp.json` (per-project):
   "mcpServers": {
     "entelligence-pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "@anthropic-ai/entelligence-pr-reviewer"]
+      "args": ["-y", "entelligence-pr-reviewer"]
     }
   }
 }
@@ -58,7 +58,7 @@ That's it. No config file editing required.
   "mcpServers": {
     "entelligence-pr-reviewer": {
       "command": "npx",
-      "args": ["-y", "@anthropic-ai/entelligence-pr-reviewer"],
+      "args": ["-y", "entelligence-pr-reviewer"],
       "env": {
         "ENTELLIGENCE_API_KEY": "ent-your-key-here"
       }
