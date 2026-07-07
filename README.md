@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/entelligence-ai-entelligence-claude-code-badge.png)](https://mseep.ai/app/entelligence-ai-entelligence-claude-code)
+
 # Entelligence PR Reviewer for Claude Code
 
 AI-powered PR review inside [Claude Code](https://claude.ai/code). Analyzes code quality, security, performance, and best practices using [Entelligence.AI](https://entelligence.ai).
